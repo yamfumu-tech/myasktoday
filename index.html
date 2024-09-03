@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" data-mode="light" class="scroll-smooths group" data-theme-color="violet">
+<html lang="en" dir="ltr" data-mode="light" class="scroll-smooths group" style="--theme-color: #2e3538;">
+
     <head>
         <meta charset="utf-8" />
         <title>MyAskToday</title>
@@ -46,10 +47,11 @@
                     <div class="flex items-center lg:order-2">
                         <div>
                             <div class="ltr:mr-4 rtl:ml-4">
-                                <a href="login_user.html" class="btn w-full group-data-[theme-color=violet]:bg-violet-500 group-data-[theme-color=sky]:bg-sky-500 group-data-[theme-color=red]:bg-red-500 group-data-[theme-color=green]:bg-green-500 group-data-[theme-color=pink]:bg-pink-500 group-data-[theme-color=blue]:bg-blue-500 border-transparent text-white hover:-translate-y-1.5">
+                                <a href="login_user.html" class="btn w-full custom-login-btn border-transparent text-white hover:-translate-y-1.5">
                                     Login <i class="uil uil-arrow-right"></i>
                                 </a>
                             </div>
+                            
                         </div>
                     </div>
                     <div id="navbar-collapse" class="navbar-res items-center justify-between w-full text-sm lg:flex lg:w-auto lg:order-1 group-focus:[.navbar-toggler]:block hidden">
@@ -90,13 +92,13 @@
         <div class="main-content">
             <div class="page-content">
                 <!-- start home -->
-                <section class="relative pt-28 pb-20 bg-violet-500">
+                <section class="relative pt-28 pb-20 custom-login-btn">
                     <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('../images/home/img-01.png');"></div>
                     <div class="container relative mx-auto">
                         <div class="grid items-center grid-cols-12 rtl:gap-10">
                             <div class="col-span-12 col-start-2">
                                 <div class="mb-3 text-center ltr:mr-14 rtl:ml-14">
-                                    <h1 class="mb-3 text-5xl leading-tight text-white fw-semibold">Connect with Over <br><span class="text-yellow-500 fw-bold">10,000+</span> Mentors.</h1>
+                                    <h1 class="mb-3 text-5xl leading-tight text-white fw-semibold">Connect with Over <br><span class="text-custom fw-bold">10,000+</span> Mentors.</h1>
                                     <p class="text-white text-17">Discover mentors, ESOs, incubators, and accelerators on MyAskToday.</p>
                                 </div>
                                 <form action="mentors.html">
@@ -135,7 +137,7 @@
                                             </div><!--end col-->
                                             <div class="col-span-12 xl:col-span-3">
                                                 <div class="h-full mt-3">
-                                                    <button class="btn group-data-[theme-color=violet]:bg-violet-400 group-data-[theme-color=sky]:bg-sky-400 group-data-[theme-color=red]:bg-red-400 group-data-[theme-color=green]:bg-green-400 group-data-[theme-color=pink]:bg-pink-400 group-data-[theme-color=blue]:bg-blue-400 border rounded-lg border-transparent ltr:xl:rounded-l-none rtl:xl:rounded-r-none w-full py-[18px] text-white" type="submit"><i class="uil uil-search me-1"></i> Find Mentors</button>
+                                                    <button class="btn group-data-[theme-color=violet]:bg-violet-400 border rounded-lg border-transparent ltr:xl:rounded-l-none rtl:xl:rounded-r-none w-full py-[18px] text-white" type="submit"><i class="uil uil-search me-1"></i> Find Mentors</button>
                                                 </div>
                                             </div><!--end col-->
                                         </div><!--end row-->
@@ -168,7 +170,8 @@
                         <div class="grid items-center grid-cols-12 gap-5">
                             <div class="col-span-12 lg:col-span-6">
                                 <h6 class="text-sm text-gray-900 uppercase dark:text-gray-50/80">About Us</h6>
-                                <h2 class="mt-1 mb-4 text-gray-900 dark:text-gray-50/80">Why <span class="font-bold text-yellow-500">Thousands of Startup Founders</span> Trust <br> MyAskToday?</h2>
+                                <h2 class="mt-1 mb-4 text-gray-900 dark:text-gray-50/80">Why <span class="font-bold" style="color: #ec7e46;">Thousands of Startup Founders</span>
+                                    Trust <br> MyAskToday?</h2>
                                 <p class="font-light text-gray-500 dark:text-gray-300">Start working with MyAskToday, a platform that empowers startup founders by providing peer-written reviews of mentors, incubators, and accelerators. We help you make informed decisions about partnerships that can shape the future of your startup, ensuring you allocate your equity wisely.</p>
                             
                                 <div class="grid grid-cols-12 gap-5 mt-8">
@@ -218,13 +221,13 @@
                         <div class="nav-tabs chart-tabpill">
                             <div class="grid grid-cols-12">
                                 <div class="col-span-12 lg:col-span-8 lg:col-start-3">
-                                    <div class="p-1.5 bg-white dark:bg-neutral-900 shadow-lg shadow-gray-100/30 rounded-lg dark:shadow-neutral-700">
+                                    <!-- <div class="p-1.5 bg-white dark:bg-neutral-900 shadow-lg shadow-gray-100/30 rounded-lg dark:shadow-neutral-700"> -->
                                         <ul class="items-center text-sm font-medium text-center text-gray-700 nav md:flex">
                                             <li class="w-full">
-                                                <a href="javascript:void(0);" data-tw-toggle="tab" data-tw-target="recent-incubators" class="inline-block w-full py-[12px] px-[18px] dark:text-gray-50 active" aria-current="page">Featured Incubator Programs</a>
+                                                <a href="javascript:void(0);" class="text-white border-transparent custom-login-btn btn focus:ring focus:ring-custom-500/20" aria-current="page">Featured Incubator Programs</a>
                                             </li>
                                         </ul>
-                                    </div>
+                                    <!-- </div> -->
                                 </div>
                             </div>
                             <div class="tab-content">
@@ -232,7 +235,7 @@
                                     <div class="pt-8 ">
                                         <div class="space-y-8">
                                             <div class="relative mt-4 overflow-hidden transition-all duration-500 ease-in-out bg-white border rounded-md border-gray-100/50 group/jobs group-data-[theme-color=violet]:hover:border-violet-500 group-data-[theme-color=sky]:hover:border-sky-500 group-data-[theme-color=red]:hover:border-red-500 group-data-[theme-color=green]:hover:border-green-500 group-data-[theme-color=pink]:hover:border-pink-500 group-data-[theme-color=blue]:hover:border-blue-500 hover:-translate-y-2 dark:bg-neutral-900 dark:border-neutral-600 ">
-                                                <div class="w-48 absolute -top-[5px] -left-20 -rotate-45 group-data-[theme-color=violet]:bg-violet-500/20 group-data-[theme-color=sky]:bg-sky-500/20 group-data-[theme-color=red]:bg-red-500/20 group-data-[theme-color=green]:bg-green-500/20 group-data-[theme-color=pink]:bg-pink-500/20 group-data-[theme-color=blue]:bg-blue-500/20 group-data-[theme-color=violet]:group-hover/jobs:bg-violet-500 group-data-[theme-color=sky]:group-hover/jobs:bg-sky-500 group-data-[theme-color=red]:group-hover/jobs:bg-red-500 group-data-[theme-color=green]:group-hover/jobs:bg-green-500 group-data-[theme-color=pink]:group-hover/jobs:bg-pink-500 group-data-[theme-color=blue]:group-hover/jobs:bg-blue-500 transition-all duration-500 ease-in-out p-[6px] text-center dark:bg-violet-500/20">
+                                                <div class="w-48 absolute -top-[5px] -left-20 -rotate-45 custom-login-btn group-data-[theme-color=sky]:bg-sky-500/20 custom-login-btn">
                                                     <a href="javascript:void(0)" class="text-2xl text-white align-middle"><i class="mdi mdi-star"></i></a>
                                                 </div>
                                                 <div class="p-4">
@@ -317,10 +320,13 @@
                         <div class="mt-8">
                             <div class="grid grid-cols-1">
                                 <div class="text-center">
-                                    <a href="incubator-categories.html" class="text-white border-transparent group-data-[theme-color=violet]:bg-violet-500 group-data-[theme-color=sky]:bg-sky-500 group-data-[theme-color=red]:bg-red-500 group-data-[theme-color=green]:bg-green-500 group-data-[theme-color=pink]:bg-pink-500 group-data-[theme-color=blue]:bg-blue-500 btn focus:ring focus:ring-custom-500/20">View More <i class="uil uil-arrow-right ms-1"></i></a>
+                                    <a href="incubator-categories.html" class="text-white border-transparent custom-login-btn btn focus:ring focus:ring-custom-500/20">
+                                        View More <i class="uil uil-arrow-right ms-1"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
                 </section>
                 

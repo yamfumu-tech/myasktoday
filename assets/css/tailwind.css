@@ -25,6 +25,39 @@
 ::after {
   --tw-content: '';
 }
+
+.custom-login-btn {
+  background-color: #2e3538;
+}
+.bag {
+  background-color: #2e3538;
+}
+
+.text-custom {
+  color: #ec7e46;
+}
+
+.custom-bg-color {
+  background-color: #ec7e46;
+}
+
+
+[data-theme-color="2e3538"] .some-class {
+  background-color: #2e3538;
+  color: #2e3538;
+}
+
+[data-theme-color="2e3538"] .another-class {
+  border-color: #2e3538;
+}
+
+[data-theme-color="2e3538"] .yet-another-class {
+  background-color: rgba(46, 53, 56, 0.2); /* Example with opacity */
+  color: rgba(46, 53, 56, var(--tw-text-opacity)); /* Dynamic opacity */
+}
+
+
+
 /*
 1. Use a consistent sensible line-height in all browsers.
 2. Prevent adjustments of font size after orientation changes in iOS.
@@ -983,6 +1016,17 @@ body{
   height: auto !important;
   z-index: 0;
 }
+
+body {
+  background-color: var(--theme-color);
+}
+
+.btn {
+  background-color: var(--theme-color);
+}
+
+/* Override any other elements using the theme color */
+
 .simplebar-offset {
   direction: inherit !important;
   -webkit-box-sizing: inherit !important;
